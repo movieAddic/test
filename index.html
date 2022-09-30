@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieAddict-Get information about movies and Web Series </title>
+    <link rel="stylesheet" href="./input.css">
+    <script src="./js/index.js" defer></script>
+    <link rel="stylesheet" href="./css/carousel.css">
+</head>
+
+<body class="bg-slate-800">
+<!-- Navbar -->
+    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded xl:dark:bg-gray-900">
+        <div class=" flex xl:justify-between xl:items-center xl:mx-auto text-white py-2 font-mono xl:px-9">
+            <div class="xl:flex xl:space-x-16 ">
+                <a href="/">
+                    <h1 class=" text-2xl  font-mono font-bold">MovieAddict</h1>
+                </a>
+                <ul class=" flex xl:space-x-12 xl:text-xl">
+                    <li>
+                        <div class="">
+                            <div class="dropdown inline-block relative ">
+                              <button class=" font-semibold  rounded inline-flex items-center">
+                                <span class="mr-1">Movies</span>
+                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                              </button>
+                              <ul class="dropdown-menu absolute hidden text-gray-700 pt-1 z-50">
+                                <li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="./html/Action.html">Action</a></li>
+                                <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="./html/Adventure.html">Adventure</a></li>
+                                <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="./html/Animation.html">Animation</a></li>
+                                <li class=""><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="./html/Comedy.html">Comedy</a></li>
+                                <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="./html/Crime.html">Crime</a></li>
+                                <li class=""><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="./html/Drama.html">Drama</a></li>
+                                <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="./html/Fantasy.html">Fantasy</a></li>
+                                <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="./html/History.html">History</a></li>
+                                <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="./html/Horror.html">Horror</a></li>
+                                <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="./html/Mystery.html">Mystery</a></li>
+                                <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="./html/Romance.html">Romance</a></li>
+                                <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="./html/Science Fiction.html">Science Fiction</a></li>
+                                <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="./html/Thriller.html">Thriller</a></li>
+                                
+                              </ul>
+                            </div>
+                          </div>
+                    </li>
+                   <li>
+                    <div class="">
+                        <div class="dropdown inline-block relative ">
+                          <button class=" font-semibold  rounded inline-flex items-center">
+                            <span class="mr-1">Web Series</span>
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                          </button>
+                          <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                            <li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Action</a></li>
+                            <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Adventure</a></li>
+                            <li class=""><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Drama</a></li>
+                            <li class=""><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="">Comedy</a></li>
+                          </ul>
+                        </div>
+                      
+                      </div>
+                   </li>
+                    
+                </ul>
+            </div>
+            <div>
+                
+            </div>
+            <div class="xl:flex ">
+                <a href="/" class=" pr-12 text-xl xl:font-semibold">Login</a>
+                <input type="text" id="search-navbar"
+                    class="block px-4  w-64 text-gray-900 bg-gray-50 rounded-xl border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Search...">
+            </div>
+
+        </div>
+    </nav>
+<!-- latest trailer -->
+<div class="carousel">
+  <div class="carousel-inner">
+      <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+      <div class="carousel-item">
+        <iframe src="https://www.youtube.com/embed/ADFCBER4Z8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class=" h-screen w-screen"></iframe>
+      </div>
+      <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+      <div class="carousel-item">
+          <img src="http://fakeimg.pl/2000x800/DA5930/fff/?text=JavaScript">
+      </div>
+      <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+      <div class="carousel-item">
+          <img src="http://fakeimg.pl/2000x800/F90/fff/?text=Carousel">
+      </div>
+      <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+      <label for="carousel-2" class="carousel-control next control-1">›</label>
+      <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+      <label for="carousel-3" class="carousel-control next control-2">›</label>
+      <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+      <label for="carousel-1" class="carousel-control next control-3">›</label>
+      <ol class="carousel-indicators">
+          <li>
+              <label for="carousel-1" class="carousel-bullet">•</label>
+          </li>
+          <li>
+              <label for="carousel-2" class="carousel-bullet">•</label>
+          </li>
+          <li>
+              <label for="carousel-3" class="carousel-bullet">•</label>
+          </li>
+      </ol>
+  </div>
+</div>
+</body>
+
+</html>
